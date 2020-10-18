@@ -4,7 +4,7 @@ const data = [
     director: 'John G. Avildsen',
     lanzamiento: '11/21/1976',
     textoPrincipal:
-      'El campeon de boxeo, Apollo Creed, le quiere dar una oportunidad a un boxeador desconocido de ganar el titulo como modo de publicidad, sus manajers eligen a Rocky Balboa, un simple maton del estado de Philadelphia. Rocky hace equipo con el entrnador Mickey Goldmill para lograr lo mejor.',
+      'Sylvester Stallone fue quien le dio vida a Rocky Balboa, no solo actoralmente sino también fue quién escribió el guión de la propia película. Confesó que modificó tantas veces el guión original, que cree que solo conservó un diez por ciento en la trama final. ¿queres saber más? Entra aquí.',
     imagenUrl: './imagenes/hero_rocky.png'
   },
   {
@@ -12,7 +12,7 @@ const data = [
     director: 'Denis Villeneuve',
     lanzamiento: '10/05/2017',
     textoPrincipal:
-      '30 años despues de la primera pelicula, el nuevo Blade Runner. LAPD Officer K descubre un secreto profundamente escondido que puede potencialmente dejar la sociedad en caos. El descubrimiento lo lleva a encontrar a Rick Deckard, un LAPD blade runner que estuvo desaparecido por muchos años.',
+      'La página web oficial de la película, a pedido de los fans, ofrece una cronología de lo que sucedió entre los años 2019 y 2049, explican qué ocurrió con la Corporación Tyrell tras la muerte de su fundador, cuál es el destino de los replicantes y quién es Niander Wallace, el villano de la secuela.',
     imagenUrl: './imagenes/hero_blade.png'
   },
   {
@@ -20,7 +20,7 @@ const data = [
     director: 'Quentin Tarantino',
     lanzamiento: '21/08/2009',
     textoPrincipal:
-      'En una Francia ocupada por los Nazis durante la segunda guerra mundial, un grupo de soldados estadounidenses judios llamados los bastados son elegidos para implantar el miedo dentro del tercer reich matando y marcando a los Nazis. Este grupo liderado po Lt. Aldo Rain pronto cruza camino con',
+      '10 años de su vida fue el tiempo que le tomó al director Quentin Tarantino dar por finalizado la historia de la película, ya que no encontraba un final impresionante que acabara con su film. Comenzó cerca del año 1994, cuando estrenó Pulp Fiction, logró terminar de escribir antes que se lanzara Kill Bill.',
     imagenUrl: './imagenes/hero_bastardos.png'
   },
   {
@@ -28,7 +28,7 @@ const data = [
     director: 'Christopher Nolan',
     lanzamiento: '18/07/2008',
     textoPrincipal:
-      'Batman eleva las apuestas en su guerra contra el crimen. Con la ayuda del teniente Jim Gordon y el fiscal de distrito Harvey Dent, Batman se propone desmantelar las organizaciones criminales restantes que plagan las calles. La asociación demuestra ser efectiva, pero pronto se encuentran presa de un',
+      'Ya todos estamos al tanto de que la historia de origen de Batman..asi que aquí el increíble dato es que sorpresivamente en esta película no aparece ninguna versión de murciélagos por primera vez en todas las películas. Ahora la pregunta ¿fue a propósito o un desliz del director?',
     imagenUrl: './imagenes/hero_batman.png'
   },
   {
@@ -36,8 +36,8 @@ const data = [
     director: 'Las ultimas noticias de todas las series que te gustan',
     lanzamiento: '',
     textoPrincipal:
-      'fiscal de distrito Harvey Dent, Batman se propone desmantelar las organizaciones criminales restantes que plagan las calles. La asociación demuestra ser efectiva, pero pronto se encuentran presa de un reinado de caos desatado por un cerebro criminal en ascenso conocido por los aterrorizados',
-    imagenUrl: './imagenes/hero_batman.png'
+      'Conocé la nueva sección de Netflix donde te vamos a mostrar en primicia los detalles más increíbles de los estrenos del mes. El género de la película no influirá en la enorme cantidad de datos asombrosos que traeremos ¿Estás listo? ¡No te lo pierdas! Animate a ser parte de esta nueva sección.',
+    imagenUrl: ''
   }
 ];
 
