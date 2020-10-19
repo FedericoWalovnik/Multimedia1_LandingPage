@@ -67,11 +67,17 @@ const actualizarData = (tarjetaSeleccionada) => {
     indexOfSelectedContent = tarjetaSeleccionada.getAttribute('index');
   }
 
+  // removing and adding the class to reset the title animation
+  tituloElement.classList.remove('title');
+  void tituloElement.offsetWidth;
+  tituloElement.classList.add('title');
+
   tituloElement.innerHTML = data[indexOfSelectedContent].titulo;
   directorElement.innerHTML = data[indexOfSelectedContent].director;
   lanzamientoElement.innerHTML = data[indexOfSelectedContent].lanzamiento;
   textoPrincipalElement.innerHTML = data[indexOfSelectedContent].textoPrincipal;
   imagenPrincipalElement.src = data[indexOfSelectedContent].imagenUrl;
+  imagenPrincipalElement.alt = `imagen ${data[indexOfSelectedContent].titulo}`;
 };
 
 const eliminarActiva = (tarjeta) => {

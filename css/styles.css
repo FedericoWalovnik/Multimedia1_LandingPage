@@ -42,9 +42,33 @@ header {
   justify-content: space-between;
 }
 
+.redes a {
+  transition: all 0.5s;
+  color: white;
+}
+
+.redes a:hover {
+  margin-top: -0.5rem;
+  color: #e50914;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .title {
   margin-left: 5rem;
   font-size: 5rem;
+
+  animation: moveInRight 0.8s ease-out;
 }
 
 .detalles {
@@ -76,36 +100,59 @@ header {
   align-content: center;
 }
 
-.botones div {
-  display: flex;
+.boton {
   flex: 0 0 50%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
   height: 3rem;
   font-size: 1.3rem;
   border-radius: 4px;
   font-weight: 600;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.botones div a {
-  text-decoration: none;
-}
-
-.botonPrincipal {
+.boton-principal {
   background-color: #e50914;
   margin-right: 2rem;
+
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgb(255, 255, 255) 50%
+  );
+  transition: background-position 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.6s ease 0s, background-color 0.6s ease;
 }
 
-.botonPrincipal a {
+.boton-principal:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  background-position: -100% 100%;
+}
+
+.boton-secundario {
   color: #fff;
-}
-
-.botonSecundario {
   border: 1.5px solid #fff;
+
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgb(255, 255, 255) 50%
+  );
+  transition: background-position 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.6s ease 0s, background-color 0.6s ease;
 }
 
-.botonSecundario a {
-  color: #fff;
+.boton-secundario:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  background-position: -100% 100%;
 }
 
 .contenido {
