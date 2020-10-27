@@ -180,7 +180,7 @@ header {
       rgb(0, 0, 0) 22%,
       rgba(44, 44, 44, 0) 100%
     ),
-    url("/imagenes/poster_bastardos.jpg");
+    url("../imagenes/poster_bastardos.jpg");
 }
 
 #tarjeta_blade {
@@ -189,7 +189,7 @@ header {
       rgb(0, 0, 0) 22%,
       rgba(44, 44, 44, 0) 100%
     ),
-    url("/imagenes/poster_blade.jpg");
+    url("../imagenes/poster_blade.jpg");
 }
 
 #tarjeta_rocky {
@@ -198,7 +198,7 @@ header {
       rgb(0, 0, 0) 22%,
       rgba(44, 44, 44, 0) 100%
     ),
-    url("/imagenes/poster_rocky.jpg");
+    url("../imagenes/poster_rocky.jpg");
 }
 
 .tarjeta {
@@ -207,7 +207,7 @@ header {
       rgb(0, 0, 0) 22%,
       rgba(44, 44, 44, 0) 100%
     ),
-    url("/imagenes/poster_batman.jpg");
+    url("../imagenes/poster_batman.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
