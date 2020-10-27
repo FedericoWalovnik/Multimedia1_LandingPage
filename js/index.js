@@ -37,7 +37,7 @@ const data = [
     lanzamiento: '',
     textoPrincipal:
       'Conocé la nueva sección de Netflix donde te vamos a mostrar en primicia los detalles más increíbles de los estrenos del mes. El género de la película no influirá en la enorme cantidad de datos asombrosos que traeremos ¿Estás listo? ¡No te lo pierdas! Animate a ser parte de esta nueva sección.',
-    imagenUrl: ''
+    imagenUrl: './imagenes/hero_inactiva.png'
   }
 ];
 
