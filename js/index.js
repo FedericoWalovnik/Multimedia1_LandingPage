@@ -36,7 +36,7 @@ const data = [
     director: 'Las ultimas noticias de todas las series que te gustan',
     lanzamiento: '',
     textoPrincipal:
-      'Conocé la nueva sección de Netflix donde te vamos a mostrar en primicia los detalles más increíbles de los estrenos del mes. El género de la película no influirá en la enorme cantidad de datos asombrosos que traeremos ¿Estás listo? ¡No te lo pierdas! Animate a ser parte de esta nueva sección.',
+      'Conocé la nueva sección de Netflix donde te vamos a mostrar en primicia los detalles más increíbles de los estrenos del mes. El género de la película no influirá en la enorme cantidad de datos asombrosos que traeremos ¡No te lo pierdas! Animate a ser parte de esta nueva sección.',
     imagenUrl: './imagenes/hero_inactiva.png'
   }
 ];
@@ -57,6 +57,14 @@ const lanzamientoElement = document.getElementById('lanzamiento');
 const textoPrincipalElement = document.getElementById('texto');
 const imagenPrincipalElement = document.getElementById('imagenPrincipal');
 
+//Boton del Form
+const botonFormElement = document.getElementById('buttonForm');
+
+//Modal
+const modal = document.getElementById('modal');
+const backdrop = document.getElementById('backdrop');
+const closeModalButton = document.getElementById('closeModal')
+
 const body = document.querySelector('body');
 
 const actualizarData = (tarjetaSeleccionada) => {
@@ -67,7 +75,7 @@ const actualizarData = (tarjetaSeleccionada) => {
     indexOfSelectedContent = tarjetaSeleccionada.getAttribute('index');
   }
 
-  // removing and adding the class to reset the title animation
+  // Sacando y poniendo la clase titulo para resetear la animacion
   tituloElement.classList.remove('title');
   void tituloElement.offsetWidth;
   tituloElement.classList.add('title');
@@ -128,6 +136,20 @@ const animacionDesactivar = (tarjeta) => {
   }
 };
 
+const toggleModal = () => {
+    modal.classList.toggle('invisible')
+}
+
+const toggleBackdrop = () => {
+    backdrop.classList.toggle('invisible')
+}
+
+const handleClickBotonForm = () =>{
+  toggleModal();
+  toggleBackdrop();
+}
+
+//Event listeners
 tarjetaRocky.addEventListener(
   'click',
   cambiarTarjetaActiva.bind(Event, tarjetaRocky)
@@ -144,5 +166,9 @@ tarjetaBatman.addEventListener(
   'click',
   cambiarTarjetaActiva.bind(Event, tarjetaBatman)
 );
+
+botonFormElement.addEventListener('click', handleClickBotonForm);
+backdrop.addEventListener('click', handleClickBotonForm);
+closeModalButton.addEventListener('click',handleClickBotonForm);
 
 body.addEventListener('load', actualizarData('neutral'));

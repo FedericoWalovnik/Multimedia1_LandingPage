@@ -16,6 +16,19 @@
     <title>Todas las novedades - Netflix</title>
   </head>
   <body>
+    <div class="modal invisible" id="modal">
+      <i class="fas fa-times modal__cross" id="closeModal"></i>
+      <h2 class="modal__titulo">Toma nuestra encuesta</h2>
+      <form action="" class="modal__form">
+        <label for="pregunta1" class="modal__label">Pregunta 1</label>
+        <input type="text" name="pregunta1" class="modal__input">
+        <label for="pregunta1" class="modal__label">Pregunta 2</label>
+        <input type="text" name="pregunta2" class="modal__input">
+        <label for="pregunta1" class="modal__label">Pregunta 3</label>
+        <input type="text" name="pregunta3" class="modal__input">
+      </form>
+      <a href="https://www.netflix.com/" target="_blank" class="boton boton-principal modal__boton">Ir a Netflix</a>
+    </div>
     <header>
       <img
         src="imagenes/Netflix_Logo_RGB.png"
@@ -36,7 +49,7 @@
         <p class="lanzamiento" id="lanzamiento"></p>
       </div>
       <p class="texto" id="texto">
-        Conocé la nueva sección de Netflix donde te vamos a mostrar en primicia los detalles más increíbles de los estrenos del mes. El género de la película no influirá en la enorme cantidad de datos asombrosos que traeremos ¿Estás listo? ¡No te lo pierdas! Animate a ser parte de esta nueva sección.
+        Conocé la nueva sección de Netflix donde te vamos a mostrar en primicia los detalles más increíbles de los estrenos del mes. El género de la película no influirá en la enorme cantidad de datos asombrosos que traeremos ¡No te lo pierdas! Animate a ser parte de esta nueva sección.
       </p>
       <div class="botones">
         <a href="https://www.google.com/" target="_blank" class="boton boton-principal">Leer mas</a>
@@ -102,11 +115,15 @@
         </div>
       </div>
     </section>
+    <div class="buttonForm" id="buttonForm">
+      <i class="fas fa-comments"></i>
+    </div>
     <img
       src="./imagenes/hero_inactiva.png"
       alt="Rocky"
       class="imagenPrincipal"
       id="imagenPrincipal"
     />
+    <div class="invisible" id="backdrop"></div>
   </body>
 </html>

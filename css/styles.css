@@ -9,6 +9,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   background: rgb(0, 0, 0);
   background: rgb(0, 0, 0);
@@ -249,6 +255,29 @@ header {
   font-size: 3rem;
 }
 
+.buttonForm {
+  background-color: #e50914;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 4vh;
+  right: 6vw;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttonForm:hover {
+  background-color: #99070e;
+}
+
+.buttonForm i {
+  font-size: 2.8rem;
+}
+
 .imagenPrincipal {
   height: 100vh;
   width: auto;
@@ -256,4 +285,80 @@ header {
   right: 0;
   top: 0rem;
   z-index: -1;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 40vw;
+  background-color: #fff;
+  border-radius: 1rem;
+  z-index: 4;
+  color: #000;
+  display: block;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin: 2rem 0 0 2rem;
+  justify-content: space-around;
+}
+
+.modal__titulo {
+  font-size: 2.5rem;
+  margin: 2rem 0 0 2rem;
+}
+
+.modal__input {
+  border-radius: 5px;
+  border: 1.5px solid #707070;
+  width: 70%;
+  height: 3rem;
+}
+
+.modal__label:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.modal__boton {
+  width: 40%;
+  border: none;
+  margin: 2rem auto;
+}
+
+.modal__boton:hover {
+  border: 1px #000 !important;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #000;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.modal__cross:hover {
+  color: rgb(73, 73, 73);
+}
+
+.invisible {
+  display: none;
+}
+
+#backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.644);
+  z-index: 3;
 }
