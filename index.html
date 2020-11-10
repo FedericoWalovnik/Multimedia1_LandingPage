@@ -20,12 +20,47 @@
       <i class="fas fa-times modal__cross" id="closeModal"></i>
       <h2 class="modal__titulo">Contanos sobre lo que te gusta</h2>
       <form action="" class="modal__form">
-        <label for="pregunta1" class="modal__label">Pregunta 1</label>
-        <input type="text" name="pregunta1" class="modal__input">
-        <label for="pregunta1" class="modal__label">Pregunta 2</label>
-        <input type="text" name="pregunta2" class="modal__input">
-        <label for="pregunta1" class="modal__label">Pregunta 3</label>
-        <input type="text" name="pregunta3" class="modal__input">
+        <div class="group">
+          <label for="pregunta1" class="modal__label">¿Que ves mas seguido?</label>
+          <div class="radioGroup">
+            <p>
+              <input type="radio" id="series" name="radio-group" checked>
+              <label for="series">Series</label>
+            </p>
+            <p>
+              <input type="radio" id="peliculas" name="radio-group">
+              <label for="peliculas">Peliculas</label>
+            </p>
+          </div>
+        </div>
+        
+        <div class="group">
+          <label for="pregunta1" class="modal__label">¿Cual es tu genero favorito?</label>
+          <select name="generos" class="generos">
+            <option value="terror">Terror</option>
+            <option value="accion">Accion</option>
+            <option value="ficcion">Ficcion</option>
+            <option value="comedia">Comedia</option>
+            <option value="romanticas">Romanticas</option>
+            <option value="suspenso">Suspenso</option>
+          </select>
+        </div>
+        
+        <div class="group">
+          <label for="pregunta1" class="modal__label">¿Que mas te gustaria ver?</label>
+          <input type="text" name="pregunta3" class="modal__input">
+        </div>
+        
+        <div class="group">
+          <div class="suscribiteNews">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <svg class="checkbox__check" width="12" height="12">
+              </svg>
+            </label>
+            <label for="suscribirse" class="label_checkbox">Suscribite a nuestro newsleter semanal</label>
+          </div>
+        </div>
       </form>
       <a href="https://www.netflix.com/" target="_blank" class="boton boton-principal modal__boton">Ir a Netflix</a>
     </div>
