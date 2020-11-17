@@ -229,6 +229,10 @@ header {
   cursor: pointer;
 }
 
+.tarjeta > * {
+  pointer-events: none;
+}
+
 .tarjetaActiva {
   box-shadow: 1 29px 69px 4px rgba(0, 0, 0, 0.75);
 }
