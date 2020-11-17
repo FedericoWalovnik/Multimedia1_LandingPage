@@ -94,7 +94,7 @@ header {
 }
 
 .texto {
-  margin-left: 5rem;
+  margin-left: 5rem;  
   margin-top: 1rem;
   font-size: 2.3vh;
   line-height: 2.4rem;
@@ -337,13 +337,14 @@ header {
   font-size: 1.3rem;
 }
 
-.modal__boton {
+#modal__boton {
   width: 40%;
   border: none;
   margin: 2rem auto;
+  border: 1px #000 !important;
 }
 
-.modal__boton:hover {
+#modal__boton:hover {
   border: 1px #000 !important;
 }
 
